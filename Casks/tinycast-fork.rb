@@ -1,6 +1,6 @@
 cask "tinycast-fork" do
-  version "0.12.11-fork.1"
-  sha256 "5d115b20f19ad34d011adadcaf6b609ac0c4c62324b90f5658ab30880c933133"
+  version "0.12.11-fork.2"
+  sha256 "3286bf025a8bf7007417246af4606417b917db46edaee7b48d448304263c5f80"
 
   url "https://github.com/amryadam/tinycast/releases/download/v#{version}/Tinycast-Fork-#{version}.zip"
   name "Tinycast Fork"
@@ -13,6 +13,7 @@ cask "tinycast-fork" do
     regex(/^v?(\d+(?:\.\d+)+-fork\.\d+)$/i)
   end
 
+  auto_updates true
   depends_on arch: :arm64
   depends_on macos: :tahoe
 
@@ -23,6 +24,7 @@ cask "tinycast-fork" do
   zap trash: [
     "~/.config/com.amryadam.tinycast",
     "~/Library/Application Support/com.amryadam.tinycast",
+    "~/Library/Application Support/CrashReporter/Tinycast Fork_*.plist",
     "~/Library/Caches/com.amryadam.tinycast",
     "~/Library/Caches/com.amryadam.tinycast.dictation",
     "~/Library/Preferences/com.amryadam.tinycast.plist",
