@@ -1,6 +1,6 @@
 cask "tinycast-fork" do
-  version "0.12.11-fork.2"
-  sha256 "3286bf025a8bf7007417246af4606417b917db46edaee7b48d448304263c5f80"
+  version "0.12.11-fork.3"
+  sha256 "a90afe02ae241dcd1d7dc1fc1ecda6fc277beb2d56847fffd341987bd476d86e"
 
   url "https://github.com/amryadam/tinycast/releases/download/v#{version}/Tinycast-Fork-#{version}.zip"
   name "Tinycast Fork"
